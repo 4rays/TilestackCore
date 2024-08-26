@@ -3,6 +3,7 @@ import SwiftFSRS
 
 public struct TileDTO: Codable, Hashable, Sendable {
   public var id: UUID
+  public var stackID: UUID
   public var question: String
   public var answer: String
   public var fsrs: Card
@@ -11,6 +12,7 @@ public struct TileDTO: Codable, Hashable, Sendable {
 
   public init(
     id: UUID,
+    stackID: UUID,
     question: String,
     answer: String,
     fsrs: Card,
@@ -18,6 +20,7 @@ public struct TileDTO: Codable, Hashable, Sendable {
     updatedAt: Date? = nil
   ) {
     self.id = id
+    self.stackID = stackID
     self.question = question
     self.answer = answer
     self.fsrs = fsrs
