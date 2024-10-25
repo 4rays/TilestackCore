@@ -15,7 +15,7 @@ let package = Package(
   ],
   dependencies: [
     // Dependencies declare other packages that this package depends on.
-    .package(url: "https://github.com/4rays/swift-fsrs.git", from: "0.9.1")
+    .package(url: "https://github.com/4rays/swift-fsrs.git", from: "0.9.2")
   ],
   targets: [
     // Targets are the basic building blocks of a package, defining a module or a test suite.
